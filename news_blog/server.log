@@ -1,0 +1,13 @@
+Watching for file changes with StatReloader
+/home/user0902/PycharmProjects/Django-sites/news-sites/news_blog/news_blog/settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2857
+"GET / HTTP/1.1" 200 2857
+"GET / HTTP/1.1" 200 2857
+"GET /post/2/ HTTP/1.1" 200 3807
+"GET / HTTP/1.1" 200 2857
+"GET /post/new/ HTTP/1.1" 200 1608
+"GET / HTTP/1.1" 200 2857
+"GET /post/4/ HTTP/1.1" 200 6620
+"GET / HTTP/1.1" 200 2857
+/home/user0902/PycharmProjects/Django-sites/news-sites/news_blog/news_blog/settings.py changed, reloading.

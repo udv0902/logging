@@ -1,0 +1,174 @@
+2022-12-27 18:56:07,341 ERROR  - Internal Server Error: / - /home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/utils/log.py - (<class 'django.template.exceptions.TemplateDoesNotExist'>, TemplateDoesNotExist('news/post_list.html'), <traceback object at 0x7f5b731d3cc0>)
+Traceback (most recent call last):
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: news/post_list.html
+2022-12-27 18:56:07,344 ERROR  - "GET / HTTP/1.1" 500 85476 - /home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/core/servers/basehttp.py - None
+2022-12-27 18:59:01,995 ERROR  - Internal Server Error: / - /home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/utils/log.py - (<class 'django.urls.exceptions.NoReverseMatch'>, NoReverseMatch("Reverse for 'post_detail' with arguments '('',)' not found. 1 pattern(s) tried: ['post/(?P<pk>[0-9]+)/\\\\Z']"), <traceback object at 0x7fb71d398080>)
+Traceback (most recent call last):
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post_detail' with arguments '('',)' not found. 1 pattern(s) tried: ['post/(?P<pk>[0-9]+)/\\Z']
+2022-12-27 18:59:02,001 ERROR  - "GET / HTTP/1.1" 500 194518 - /home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/core/servers/basehttp.py - None
+2022-12-27 19:00:39,409 ERROR  - Internal Server Error: / - /home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/utils/log.py - (<class 'django.urls.exceptions.NoReverseMatch'>, NoReverseMatch("Reverse for 'post_detail' with arguments '('',)' not found. 1 pattern(s) tried: ['post/(?P<pk>[0-9]+)/\\\\Z']"), <traceback object at 0x7fb71dbf31c0>)
+Traceback (most recent call last):
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post_detail' with arguments '('',)' not found. 1 pattern(s) tried: ['post/(?P<pk>[0-9]+)/\\Z']
+2022-12-27 19:00:39,415 ERROR  - "GET / HTTP/1.1" 500 194382 - /home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/core/servers/basehttp.py - None
+#############################
+2022-12-27 19:15:56,199 ERROR  - Internal Server Error: / - /home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/utils/log.py - (<class 'django.urls.exceptions.NoReverseMatch'>, NoReverseMatch("Reverse for 'post_detail' with arguments '('',)' not found. 1 pattern(s) tried: ['post/(?P<pk>[0-9]+)/\\\\Z']"), <traceback object at 0x7f6a7cced740>)
+Traceback (most recent call last):
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/template/defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post_detail' with arguments '('',)' not found. 1 pattern(s) tried: ['post/(?P<pk>[0-9]+)/\\Z']
+2022-12-27 19:15:56,202 ERROR  - "GET / HTTP/1.1" 500 194504 - /home/user0902/PycharmProjects/Django-sites/news-sites/venv/lib/python3.9/site-packages/django/core/servers/basehttp.py - None
+#############################
